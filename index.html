@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Hermione ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+  <div id="confetti" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="stars"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">A little birthday surprise ✨</p>
+        <h1>Happy Birthday,<br><span>Hermione</span> ❤️</h1>
+        <p class="subtitle">For Sneha Jaiswal — a friend who became a beautiful part of my story.</p>
+        <button class="primary-btn" id="startBtn">Open your surprise <span>↓</span></button>
+      </div>
+      <div class="scroll-hint">scroll gently ↓</div>
+    </section>
+
+    <section class="intro section">
+      <div class="card reveal">
+        <div class="quote-mark">“</div>
+        <p class="big-quote">Some people come into our lives unexpectedly… and somehow, they become impossible to imagine life without.</p>
+        <div class="line"></div>
+        <p class="small-note">And honestly, I'm really glad you're one of those people.</p>
+      </div>
+    </section>
+
+    <section class="letter section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">A few words for you</p>
+        <h2>Dear Hermione,</h2>
+      </div>
+
+      <div class="letter-card reveal">
+        <p>Today is your day, but I wanted to make it about something more than just saying <em>“Happy Birthday.”</em></p>
+        <p>I wanted to remind you that your presence matters. There are people we meet, people we talk to, and then there are those rare people whose presence quietly makes our days a little better.</p>
+        <p>You're one of those people to me.</p>
+        <p>Thank you for the conversations, the random moments, the laughs, the little memories, and even the ordinary days that somehow became special simply because you were there.</p>
+        <p>I hope this new year of your life gives you countless reasons to smile. I hope you get the things you've been wishing for, find the courage to chase the things you dream about, and always remember how much you are capable of.</p>
+        <p>And whenever life gets difficult, I hope you remember that you don't have to have everything figured out. Just keep going, one day at a time.</p>
+        <p class="closing">I'm genuinely grateful that our paths crossed.<br>Stay happy. Stay crazy. Stay you. ❤️</p>
+      </div>
+    </section>
+
+    <section class="memories section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Our little corner</p>
+        <h2>Memories waiting to happen</h2>
+        <p class="section-subtitle">Add your favorite photos below and turn this into your own little time capsule.</p>
+      </div>
+
+      <div class="photo-grid">
+        <label class="photo-slot reveal">
+          <input type="file" accept="image/*" class="photo-input">
+          <span class="plus">+</span>
+          <span>Add a memory</span>
+        </label>
+        <label class="photo-slot reveal">
+          <input type="file" accept="image/*" class="photo-input">
+          <span class="plus">+</span>
+          <span>Add a memory</span>
+        </label>
+        <label class="photo-slot reveal">
+          <input type="file" accept="image/*" class="photo-input">
+          <span class="plus">+</span>
+          <span>Add a memory</span>
+        </label>
+      </div>
+    </section>
+
+    <section class="surprise section" id="surprise">
+      <div class="surprise-card reveal">
+        <div class="gift-icon">🎁</div>
+        <p class="eyebrow">One last thing...</p>
+        <h2>There's a little surprise for you.</h2>
+        <p>Don't worry, it's not homework. Hermione would probably finish that anyway. 😌</p>
+        <button class="primary-btn" id="giftBtn">Open the gift 🎀</button>
+      </div>
+    </section>
+
+    <section class="final section" id="final">
+      <div class="final-content reveal">
+        <div class="cake">🎂</div>
+        <p class="eyebrow">Today, tomorrow, always</p>
+        <h2>Happy Birthday,<br><span>Sneha Jaiswal</span></h2>
+        <p class="final-message">May your smile stay bright, your heart stay soft, and your life be filled with moments worth remembering.</p>
+        <p class="signature">— from your close friend, with lots of love ❤️</p>
+        <button class="secondary-btn" id="againBtn">Read it again ↺</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-control">
+    <button id="musicBtn" aria-label="Toggle background music">♫</button>
+    <span>music</span>
+  </div>
+
+  <audio id="music" loop preload="auto">
+    <!-- Optional: put your own music file named birthday-song.mp3 in this folder. -->
+    <source src="birthday-song.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
